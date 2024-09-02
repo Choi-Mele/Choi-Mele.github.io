@@ -379,6 +379,7 @@ main {
 
   h1 {
     margin-top: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   p {
@@ -717,9 +718,14 @@ $btn-mb: 0.5rem;
     height: 7rem;
     overflow: hidden;
     box-shadow: var(--avatar-border-color) 0 0 0 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transform: translateZ(0); /* fixed the zoom in Safari */
 
     img {
+      width: 80%;
+      height: 80%;
       transition: transform 0.5s;
 
       &:hover {
@@ -735,6 +741,10 @@ $btn-mb: 0.5rem;
     padding-left: 2.5rem;
     padding-right: 1.25rem;
     width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .site-title {
